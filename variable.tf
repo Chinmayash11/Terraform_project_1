@@ -27,7 +27,9 @@ variable "instance_count" {
   type        = number
 }  
 
-variable "vpc_id" {}
+variable "vpc_id" {
+  default = ""
+}
 
 locals {
   ingress_rules = [{
